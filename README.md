@@ -1,6 +1,6 @@
 # Admin Dashboard
 
-This is a responsive Admin Dashboard built using **HTML**, **CSS**, and **JavaScript**.
+This is a responsive Admin Dashboard built using **HTML**, **CSS**,**JavaScript** and **Bootstrap**
 
 ## 🌟 Features
 
