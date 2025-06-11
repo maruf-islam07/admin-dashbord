@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: poppins,sens-serif;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+/* ================== Sidebar =============== */
+#sidebar{
+    overflow-y: scroll;
+    max-width: 270px;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    transition: all .35s ease-in-out;
+    background-color: #fff;
+    height: 100vh; /* পুরো ভিউ হাইট নিবে */
+}
+.sidebar-footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+
+.sidebar-footer .nav-link:hover {
+    background-color: #f6f6f6;
+}
+.sidebar-brand{
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+
+}
+.sidebar-brand img{
+    width: 50px;
+}
+.sidebar-brand h2{
+    letter-spacing: 2px;
+    font-family: maruf;
+    font-weight: 700;
+    cursor: pointer;
+}
+.nav-header{
+    margin: 20px 5px;
+    font-size: 13px;
+}
+.nav-link{
+    font-size: 15px;
+}
+.nav-item:hover{
+    background-color: #f6f6f6;
+}
+#sidebar.collapsed{
+    margin-left: -270px;
+}
+.toggler-btn{
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 4px;
+}
+.toggler-btn:hover{
+    background-color: #d1cece;
+}
+
+.nav-menu{
+    background-color: #fff;
+}
+
+.search-area input{
+    height: 30px;
+    position: relative;
+}
+.search-area i{
+    position: absolute;
+    left: 290px;
+    margin-top: 6px;
+}
+
+.mail-box{
+    font-size: 22px;
+    padding: 5px;
+}
+.mail-box:hover{
+    background-color: #d1cece;
+}
+
+.profile {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding-right: 5px;
+}
+.profile img{
+    width: 30px;
+}
+.profile a{
+   margin-left: 5px;
+}
+.profile:hover{
+    background-color: #d1cece;
+    color: #535151;
+}
+/* ====================offanvase=============== */
+.offcanvas{
+    width: 270px !important;
+    overflow-y: scroll;
+}
+/* ====================offanvase end=============== */
+
+/* ======================Chart================== */
+#area-chart,
+#line-chart,
+#bar-chart,
+#stacked,
+#pie-chart{
+  min-height: 250px;
+}
+/* ======================Chart================== */

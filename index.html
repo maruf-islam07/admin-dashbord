@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <script src="https://kit.fontawesome.com/a003cc6f57.js" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <div class="main-wrapper d-flex">
+        
+<!-- -----------Sidebar------------- -->
+        <aside id="sidebar">
+         <!-- ----------Sidebar Header------- -->
+            <div class="sidebar-brand border-bottom">
+               <a href="index.html"><img src="img/messi.svg" class="img-fluid" alt=""></a>
+                <h2 class="mt-4" >MARUF</h2>
+            </div>
+         <!-- ----------Sidebar Header End------- -->
+
+         <!-- -------------Sidebar Menu--------- -->
+            <div class="flex-grow-1">
+                <ul class="navbar-nav p-4 ">
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <span class="nav-level">Dashbord</span>
+                    </a></li>
+                    <li class="nav-header border-bottom">
+                        <span>UI Components</span>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-font"></i>
+                        <span class="nav-level">Typograpy</span>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-palette"></i>
+                        <span class="nav-level">Color</span>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-icons"></i>
+                        <span class="nav-level">Icons</span>
+                    </a></li>
+
+                    <li class="nav-header border-bottom"> 
+                    <span > Pages</span>
+                    </li>
+
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="nav-level">Login</span>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-id-card"></i>
+                        <span class="nav-level">Register</span>
+                    </a></li>
+                </ul>
+            </div>
+            
+        <!-- -------sidebar Footer------- -->
+            <div class="sidebar-footer p-4">
+                <a href="" class="nav-link">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="nav-level">Profile</span>
+                </a>
+                <a href="" class="nav-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="nav-level">Logout</span>
+                </a>
+            </div>
+        </aside>
+    
+<!-- -----------Sidebar End------------- -->
+
+<!-- ----------------Offcanvas for middle and small screen--------- -->
+        <div class="offcanvas offcanvas-start d-lg-none"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <div class="sidebar-brand border-bottom">
+                    <a href="index.html"><img src="img/messi.svg" class="img-fluid" alt=""></a>
+                     <h2 class="mt-4" >MARUF</h2>
+                 </div>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav p-4  ">
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <span class="nav-level">Dashbord</span>
+                    </a></li>
+                    <li class="nav-header border-bottom">
+                        <span>UI Components</span>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-font"></i>
+                        <span class="nav-level">Typograpy</span>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-palette"></i>
+                        <span class="nav-level">Color</span>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-icons"></i>
+                        <span class="nav-level">Icons</span>
+                    </a></li>
+    
+                    <li class="nav-header border-bottom"> 
+                       <span > Pages</span>
+                     </li>
+    
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="nav-level">Login</span>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <i class="fa-solid fa-id-card"></i>
+                        <span class="nav-level">Register</span>
+                    </a></li>
+                </ul>
+                <div class="sidebar-footer p-4">
+                    <a href="" class="nav-link">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="nav-level">Profile</span>
+                    </a>
+                    <a href="" class="nav-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="nav-level">Logout</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+ <!-- ----------------Offcanvas for middle and small screen end--------- -->
+ 
+<!-- --------------Main Area---------------- -->
+        <div class="main">
+           <nav class="navbar navbar-expand border-bottom nav-menu">
+                <botton class="toggler-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                    <i class="fa-solid fa-bars"></i>
+                </botton>
+            <!-- -----------search area--------- -->
+                <div class="search-area ms-5"> 
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </form>
+                </div>
+            <!-- -----------search area End--------- -->
+            <!-- ----------------Profile area-------------- -->
+                <form class="d-flex ms-auto me-3">
+                    <div class="inbox">
+                    <a href="" class="nav-link mt-2"> <i class="fa-regular fa-envelope mail-box"></i></a>
+                    </div>
+                    <div class="profile mx-3">
+                        <a href=""><img src="img/bussiness-man.png" class="img-fluid user" alt=""></a>
+                        <a href="" class="nav-link">Maruf Islam</a>
+                    </div>
+
+                </form>
+            <!-- ----------------Profile areaEnd-------------- -->
+            </nav>  
+            <main class="p-3">
+
+                 <!-- ------------Breadcrumb part---------- -->
+                 <nav aria-label="breadcrumb " class="p-3 d-flex">
+                    <h5 class="pe-4">Home</h5>
+                    <ol class="breadcrumb mt-1">
+                      <li class="breadcrumb-item">
+                        <a href="#" class="nav-link">Home</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#" class="nav-link d-flex">Dashbord</a>
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                  </nav>
+                 <!-- ------------Breadcrumb part End---------- -->
+
+            <!-- ------------card Area ----------- -->
+                <div class="container-fluid card-area">
+                    <div class="row">
+                        <div class=" col-md-6 col-lg-3 py-3 ">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="mb-2 f-w-400 text-muted">Total Page Views</h6>
+                                    <h4 class="mb3">4,24,226</h4>
+                                    <p class="text-muted">you made an extra <span class="text-primary">3500</span> this year</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-3  py-3 ">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="mb-6 f-w-400 text-muted">Total Users</h6>
+                                    <h4 class="mb3">78,250</h4>
+                                    <p class="text-muted">you made an extra <span class="text-primary">3500</span> this year</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3  py-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="mb-2 f-w-400 text-muted">Total Order</h6>
+                                    <h4 class="mb3">18,800</h4>
+                                    <p class="text-muted">you made an extra <span class="text-primary">3500</span> this year</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3  py-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="mb-2 f-w-400 text-muted">Total Sales</h6>
+                                    <h4 class="mb3">$35,078</h4>
+                                    <p class="text-muted">you made an extra <span class="text-primary">3500</span> this year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            <!-- ------------card Area end----------- -->
+             <!-- --------------- Chart area-------------- -->
+             
+             <!-- --------------- Chart area End-------------- -->
+
+            </main>
+        </div>
+
+<!-- --------------Main Area End---------------- -->
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="css/bootstrap.bundle.min.js"></script>
+</body>
+</html>
