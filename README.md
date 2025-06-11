@@ -11,4 +11,4 @@ This is a responsive Admin Dashboard built using **HTML**, **CSS**, and **JavaSc
 
 ## 🚀 Live Demo
 
-👉 [Click here to view the live project](https://maruf-islam07.github.io/admin-dashboard/)
+👉 [Click here to view the live project](https://maruf-islam07.github.io/admin-dashbord/)
